@@ -1,5 +1,7 @@
 var Hapi = require('hapi');
 var Joi = require('joi');
+
+
 var server = Hapi.createServer('localhost', 8000);
 
 var config = {
@@ -14,10 +16,10 @@ var config = {
 
 		reply('Hello ' + request.params.name + '!');
 	}
-}
+};
 
 server.route({
- 	method: 'GET',
+    method: 'GET',
     path: '/hello/{name}',
     config: config
 });
