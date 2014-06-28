@@ -9,6 +9,10 @@ var config = {
 		params: {
 			name: Joi.string().required().description('A name!')
 		}
+	},
+	handler: function (request, reply) {
+
+		reply('Hello ' + request.params.name + '!');
 	}
 }
 
