@@ -12,6 +12,7 @@
     "handlebars": "^2.0.0-alpha.4",
     "hapi": "^6.0.2",
     "joi": "^4.6.1",
-    "lout": "^5.0.1"
+    "lout": "^5.0.1",
+    "hapi-auth-basic": "^1.1.0"
   }
 }
